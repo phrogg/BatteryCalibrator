@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/developer"
+        android:title="Developer" />
+
+    <item android:id="@+id/donate"
+        android:title="Donate+" />
+</menu>
