@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">BatteryCalibrate</string>
+    <string name="title_activity_wizard">WizardActivity</string>
+    <string name="first">First</string>
+    <string name="second">Second</string>
+    <string name="third">Third</string>
+
+    <string name="desc">Flashing a new ROM can manipulate the Batterstats.bin file.\nThis file is used by the phone to map the battery charging, so that the phone knows when the battery is full or empty.\nIf this file is corrupted the phone my stops to charge/use the battery correctly and so the file has to be recreated.\nThis app will remove the old Batterystats.bin file and let the new ROM create a new one.\nThis will fix most common software issues.\nThis cannot however fix any hardware related issues.\n\nDISCLAIMER:\nI m not responsible for any damage may or may not occurr while using or not using this app!</string>
+    <string name="desc2">Make sure that all options above are ticked and green.\nIf so disconnect your charger first!\nAnd then click the \"Calibrate\" button below.</string>
 </resources>

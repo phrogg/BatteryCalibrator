@@ -6,6 +6,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.net.Uri;
 import android.os.BatteryManager;
@@ -54,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
                 isReady = true;
                 but_calibrate.setTextColor(Color.GREEN);
             }
+
             if(isCharging){
                 txt_isCharging.setText("Charging");
                 txt_1t.setTextColor(Color.GREEN);txt_1t.setText("✔");
@@ -95,6 +97,12 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+
+        SharedPreferences mPref = getSharedPreferences("init",0);
+        if(mPref.getBoolean("init",true)){
+            startActivity(new Intent(MainActivity.this,WizardActivity.class));
+            mPref.edit().putBoolean("init",false).commit();
+        }
 
         //Startup
         txt_2t.setTextColor(Color.RED);txt_2t.setText("✘");
