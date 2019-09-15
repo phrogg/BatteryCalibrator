@@ -129,4 +129,6 @@
   <com.google.android.datatransport/>
   <zipflinger/>
   <androidx.autofill/>
+  <androidx.ads/>
+  <com.android/>
 </metadata>
