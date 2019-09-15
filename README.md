@@ -1,4 +1,9 @@
-<img src="https://img.shields.io/github/release/LuigiTheHunter/BatteryCalibrator.svg?logo=github" />   <img src="https://img.shields.io/f-droid/v/eu.roggstar.luigithehunter.batterycalibrator.svg" />   [![GitHub license](https://img.shields.io/github/license/LuigiTheHunter/BatteryCalibrator.svg)](https://github.com/LuigiTheHunter/BatteryCalibrator/blob/master/LICENSE)   [![GitHub issues](https://img.shields.io/github/issues/LuigiTheHunter/BatteryCalibrator.svg)](https://GitHub.com/LuigiTheHunter/BatteryCalibrator/issues/)   [![Tracker Badge](https://img.shields.io/badge/Tracker-0-green.svg)](https://shields.io/)   [![Permissions Badge](https://img.shields.io/badge/Permissions-0-green.svg)](https://shields.io/)   [![ADS Badge](https://img.shields.io/badge/No-ADs-green.svg)](https://shields.io/)
+<img src="https://img.shields.io/github/release/LuigiTheHunter/BatteryCalibrator.svg?logo=github" />   <img src="https://img.shields.io/f-droid/v/eu.roggstar.luigithehunter.batterycalibrator.svg" />   [![GitHub license](https://img.shields.io/github/license/LuigiTheHunter/BatteryCalibrator.svg)](https://github.com/LuigiTheHunter/BatteryCalibrator/blob/master/LICENSE)   [![GitHub issues](https://img.shields.io/github/issues/LuigiTheHunter/BatteryCalibrator.svg)](https://GitHub.com/LuigiTheHunter/BatteryCalibrator/issues/)
+<br>
+[![Tracker Badge](https://img.shields.io/badge/Tracker-0-green.svg)](https://reports.exodus-privacy.eu.org/en/reports/search/eu.roggstar.luigithehunter.batterycalibrate/)   [![Permissions Badge](https://img.shields.io/badge/Permissions-0-green.svg)](https://reports.exodus-privacy.eu.org/en/reports/search/eu.roggstar.luigithehunter.batterycalibrate/)   [![ADS Badge](https://img.shields.io/badge/ADs-0-green.svg)](https://reports.exodus-privacy.eu.org/en/reports/search/eu.roggstar.luigithehunter.batterycalibrate/)
+<br>
+[![Donate Badge](https://img.shields.io/badge/Donate-Me-green.svg)](https://paypal.me/proggenbuck)
+
 
 # NoAd Battery Calibrator [ROOT]
 
