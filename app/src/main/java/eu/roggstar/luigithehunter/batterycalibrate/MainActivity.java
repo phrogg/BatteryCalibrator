@@ -176,8 +176,8 @@ public class MainActivity extends AppCompatActivity {
             case R.id.developer:
                 startActivity(new Intent(MainActivity.this, VersionActivity.class));
                 return true;
-            case R.id.donate:
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.paypal.me/proggenbuck"));
+            case R.id.aboutme:
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.phrogg.de"));
                 startActivity(browserIntent);
                 return true;
         }

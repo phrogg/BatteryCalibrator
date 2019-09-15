@@ -1,0 +1,2 @@
+Added first-time-wizard which explains how the procedure works.
+I had to remove the donate function cause of google. If you still want to donate you can in the future on my website, thanks.

@@ -6,7 +6,7 @@ android {
         applicationId "eu.roggstar.luigithehunter.batterycalibrate"
         minSdkVersion 14
         targetSdkVersion 28
-        versionCode 8
+        versionCode 7
         versionName "Charger"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }

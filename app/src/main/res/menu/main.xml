@@ -3,6 +3,6 @@
     <item android:id="@+id/developer"
         android:title="Developer" />
 
-    <item android:id="@+id/donate"
-        android:title="Donate+" />
+    <item android:id="@+id/aboutme"
+        android:title="About me" />
 </menu>

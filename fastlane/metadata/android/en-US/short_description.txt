@@ -1,0 +1,1 @@
+Calibrating your battery after flashing a new ROM may increase your battery life

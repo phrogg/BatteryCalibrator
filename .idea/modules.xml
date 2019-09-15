@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/BatteryCalibrate.iml" filepath="$PROJECT_DIR$/BatteryCalibrate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BatteryCalibrator.iml" filepath="$PROJECT_DIR$/BatteryCalibrator.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

@@ -1,0 +1,1 @@
+Added ticks instead of color change of the text.

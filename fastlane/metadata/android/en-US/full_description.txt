@@ -1,0 +1,19 @@
+This is a Data Privacy respecting app without any trackers, ads or unneccessary permissions:https://reports.exodus-privacy.eu.org/en/reports/search/eu.roggstar.luigithehunter.batterycalibrate/
+
+How to use it:
+1. Charge your phone to 100%
+2. Click on the calibrate button
+3. Disconnect your charger
+4. Profit!
+
+What does it do:
+This app deletes the battery configuration file. And your new ROM will create a new one (a better one).
+ 
+Note that:
+Root is needed in order for this app to work.
+There are many apps out there just pretending to do something...
+There are many apps with annoying advertisements out there...
+This app does really it's thing without any ads. Long live FOSS.
+
+Disclaimer:
+I'm not responsible for any damage that may or may not happen to your device.
