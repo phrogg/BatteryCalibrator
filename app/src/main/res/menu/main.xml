@@ -1,5 +1,8 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <item android:id="@+id/revert"
+        android:title="Revert old batterystats file" />
+
     <item android:id="@+id/developer"
         android:title="Developer" />
 

@@ -90,7 +90,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if(isReady) {
-                    execu();
+                    execu("mv /data/system/batterystats.bin /data/system/batterystats.bin.old");
+                    execu("rm /data/system/batterystats*.bin");
                     txt_4t.setTextColor(Color.GREEN);txt_4t.setText("✔");
                 } else {
                     dialog(false);
@@ -117,7 +118,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(DialogInterface dialog, int which) {
                 switch (which){
                     case DialogInterface.BUTTON_POSITIVE:
-                        execu();
+                        execu("mv /data/system/batterystats.bin /data/system/batterystats.bin.old");
+                        execu("rm /data/system/batterystats*.bin");
                         break;
 
                     case DialogInterface.BUTTON_NEGATIVE:
@@ -142,12 +144,12 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    void execu (){
+    void execu(String com){
         try {
             Process su = Runtime.getRuntime().exec("su");
             DataOutputStream outputStream = new DataOutputStream(su.getOutputStream());
 
-            outputStream.writeBytes( "rm /data/system/batterystats*.bin\n");
+            outputStream.writeBytes( com+"\n");
             outputStream.flush();
 
             outputStream.writeBytes("exit\n");
@@ -179,6 +181,9 @@ public class MainActivity extends AppCompatActivity {
             case R.id.aboutme:
                 Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.phrogg.de"));
                 startActivity(browserIntent);
+                return true;
+            case R.id.revert:
+                execu("mv /data/system/batterystats.bin.old /data/system/batterystats.bin");
                 return true;
         }
         return false;
