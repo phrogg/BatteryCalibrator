@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="eu.roggstar.luigithehunter.batterycalibrate">
+    package="eu.roggstar.batterycalibrator">
 
     <application
         android:allowBackup="true"
@@ -11,10 +11,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".WizardActivity"
+            android:name="eu.roggstar.batterycalibrator.WizardActivity"
             android:label="@string/title_activity_wizard"
             android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity android:name=".MainActivity">
+        <activity android:name="eu.roggstar.batterycalibrator.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -24,7 +24,7 @@
                 <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
             </intent-filter>
         </activity>
-        <activity android:name=".VersionActivity" />
+        <activity android:name="eu.roggstar.batterycalibrator.VersionActivity" />
     </application>
 
 </manifest>

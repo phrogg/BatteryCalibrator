@@ -1,4 +1,4 @@
-package eu.roggstar.luigithehunter.batterycalibrate;
+package eu.roggstar.batterycalibrator;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("eu.roggstar.luigithehunter.batterycalibrate", appContext.getPackageName());
+        assertEquals("eu.roggstar.batterycalibrate", appContext.getPackageName());
     }
 }

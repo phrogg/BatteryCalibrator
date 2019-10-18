@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="eu.roggstar.luigithehunter.batterycalibrate.MainActivity">
+    tools:context="eu.roggstar.batterycalibrator.MainActivity">
 
     <Button
         android:id="@+id/but_calibrate"

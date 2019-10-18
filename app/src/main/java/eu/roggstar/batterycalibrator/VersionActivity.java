@@ -1,4 +1,4 @@
-package eu.roggstar.luigithehunter.batterycalibrate;
+package eu.roggstar.batterycalibrator;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

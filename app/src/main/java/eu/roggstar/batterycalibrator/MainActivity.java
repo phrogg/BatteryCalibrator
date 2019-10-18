@@ -1,4 +1,4 @@
-package eu.roggstar.luigithehunter.batterycalibrate;
+package eu.roggstar.batterycalibrator;
 
 import android.app.AlertDialog;
 import android.content.BroadcastReceiver;
