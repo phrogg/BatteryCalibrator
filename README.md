@@ -36,3 +36,6 @@ Please add bugs or feature requests as issues.<br><br>
 [<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png"
      alt="Get it on F-Droid"
      height="80">](https://f-droid.org/packages/eu.roggstar.luigithehunter.batterycalibrate/)
+[<img src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png"
+     alt="Get it on Google Play"
+     height="80">](https://play.google.com/store/apps/details?id=eu.roggstar.batterycalibrator)
