@@ -1,4 +1,6 @@
-This is a Data Privacy respecting app without any trackers, ads or unneccessary permissions:https://reports.exodus-privacy.eu.org/en/reports/search/eu.roggstar.batterycalibrate/
+Since google suspended the app I had to rename the package therefore the app is continued as [[eu.roggstar.batterycalibrate]]
+
+This is a Data Privacy respecting app without any trackers, ads or unneccessary permissions:https://reports.exodus-privacy.eu.org/en/reports/eu.roggstar.batterycalibrator/
 
 How to use it:
 1. Charge your phone to 100%
