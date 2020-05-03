@@ -1,4 +1,5 @@
-<img src="https://img.shields.io/github/release/phrogg/BatteryCalibrator.svg?logo=github" />   <img src="https://img.shields.io/f-droid/v/eu.roggstar.batterycalibrate.svg" />   [![GitHub license](https://img.shields.io/github/license/phrogg/BatteryCalibrator.svg)](https://github.com/phrogg/BatteryCalibrator/blob/master/LICENSE)   [![GitHub issues](https://img.shields.io/github/issues/phrogg/BatteryCalibrator.svg)](https://GitHub.com/phrogg/BatteryCalibrator/issues/)
+<img src="https://img.shields.io/github/release/phrogg/BatteryCalibrator.svg?logo=github" />   <img src="https://img.shields.io/f-droid/v/eu.roggstar.luigithehunter.batterycalibrate.svg" /><br>
+[![GitHub license](https://img.shields.io/github/license/phrogg/BatteryCalibrator.svg)](https://github.com/phrogg/BatteryCalibrator/blob/master/LICENSE)   [![GitHub issues](https://img.shields.io/github/issues/phrogg/BatteryCalibrator.svg)](https://GitHub.com/phrogg/BatteryCalibrator/issues/)
 <br>
 [![Tracker Badge](https://img.shields.io/badge/Tracker-0-green.svg)](https://reports.exodus-privacy.eu.org/en/reports/search/eu.roggstar.batterycalibrate/)   [![Permissions Badge](https://img.shields.io/badge/Permissions-0-green.svg)](https://reports.exodus-privacy.eu.org/en/reports/search/eu.roggstar.batterycalibrate/)   [![ADS Badge](https://img.shields.io/badge/ADs-0-green.svg)](https://reports.exodus-privacy.eu.org/en/reports/search/eu.roggstar.batterycalibrate/)
 <br>
@@ -32,4 +33,10 @@ Disclaimer:
 I'm not responsible for any damage may or may not occur while using or not using this app!
 
 Please add bugs or feature requests as issues.<br><br>
-<a href='https://f-droid.org/en/packages/eu.roggstar.batterycalibrate' target="_blank"><img alt='Get it on F-Droid' src='https://f-droid.org/badge/get-it-on.png' height="75"/></a><a href='https://play.google.com/store/apps/details?id=eu.roggstar.batterycalibrate' target="_blank"><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' height="75"/></a>
+
+[<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png"
+     alt="Get it on F-Droid"
+     height="80">](https://f-droid.org/packages/eu.roggstar.luigithehunter.batterycalibrate/)
+[<img src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png"
+     alt="Get it on Google Play"
+     height="80">](https://play.google.com/store/apps/details?id=eu.roggstar.batterycalibrator)
