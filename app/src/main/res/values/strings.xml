@@ -1,10 +1,18 @@
 <resources>
     <string name="app_name">BatteryCalibrate</string>
-    <string name="title_activity_wizard">WizardActivity</string>
-    <string name="first">First</string>
-    <string name="second">Second</string>
-    <string name="third">Third</string>
+    <string name="title_activity_wizard" translatable="false">WizardActivity</string>
+    <string name="first" translatable="false">First</string>
+    <string name="second" translatable="false">Second</string>
+    <string name="third" translatable="false">Third</string>
 
-    <string name="desc">Flashing a ROM can manipulate the Batterstats.bin file.\nThis file is used by the phone to map the battery charging.\nIf this file is corrupted the phone my stops to charge/use the battery correctly and so the file has to be recreated.\nThis app will remove the old Batterystats.bin file and let the ROM create a new one.\nThis will fix most common software issues.\nThis cannot however fix any hardware related issues.\n\nDISCLAIMER:\nI m not responsible for any damage may or may not occurr while using or not using this app!</string>
-    <string name="desc2">Make sure that all options above are ticked and green.\nIf so disconnect your charger first!\nAnd then click the \"Calibrate\" button below.</string>
+    <string name="step1">Step 1: Connect to a charger</string>
+    <string name="step2">Step 2: Charge up to 100%</string>
+    <string name="step3">Step 3: Click Calibrate</string>
+    <string name="action_calibrate">Calibrate</string>
+    <string name="text_indicator0">Discharging</string>
+    <string name="text_indicator1">Charging</string>
+
+
+    <string name="desc">Flashing a ROM can manipulate the Batterstats.bin file.\\nThis file is used by the phone to map the battery charging. If this file is corrupted the phone may stops to charge/use the battery correctly. The file has to be recreated. This app will remove the old Batterystats.bin file and let the ROM create a new one. This will fix most common software issues. This cannot however fix any hardware related issues.  DISCLAIMER: I\'m not responsible for any damage may or may not occurr while using or not using this app!</string>
+    <string name="desc2">To achieve the best results charge your phone up to 100%. It\'s a good practice to disconnect the charger before  clicking \"Calibrate\" and let the phones battery deplete to about 5%.</string>
 </resources>

@@ -25,7 +25,7 @@ import java.io.IOException;
 
 public class MainActivity extends AppCompatActivity {
 
-    private TextView txt_percentage, txt_isCharging,txt_4t,txt_3t,txt_2t,txt_1t;
+    private TextView txt_percentage, txt_isCharging,txt_3t,txt_2t,txt_1t;
     private Button but_calibrate;
     private boolean isReady = false;
 
@@ -36,32 +36,27 @@ public class MainActivity extends AppCompatActivity {
             txt_percentage.setText(String.valueOf(level) + "%");
             int status = intent.getIntExtra(BatteryManager.EXTRA_STATUS, -1);
             boolean isCharging = status == BatteryManager.BATTERY_STATUS_CHARGING || status == BatteryManager.BATTERY_STATUS_FULL;
-
-            if(level < 70){
-                txt_percentage.setTextColor(Color.RED);
-                but_calibrate.setTextColor(Color.RED);
-                txt_2t.setTextColor(Color.RED);txt_2t.setText("✘");
-                txt_3t.setTextColor(Color.RED);txt_3t.setText("✘");
-                txt_4t.setTextColor(Color.RED);txt_4t.setText("✘");//✔ ✘
-            } else if(level < 90){
+            /*
+            if(level < 90){
                 txt_percentage.setTextColor(Color.CYAN);
                 txt_2t.setTextColor(Color.GREEN);txt_2t.setText("✔");
                 txt_3t.setTextColor(Color.RED);txt_3t.setText("✘");
                 but_calibrate.setBackgroundColor(Color.CYAN);
-            } else if(level == 100){
+            } else */
+            if(isCharging){
+                txt_isCharging.setText(getResources().getString(R.string.text_indicator1));
+                txt_1t.setTextColor(Color.GREEN);txt_1t.setText("✔");
+            } else {
+                txt_isCharging.setText(getResources().getString(R.string.text_indicator0));
+                txt_1t.setTextColor(Color.RED);txt_1t.setText("✘");
+            }
+
+            if(level == 100){
                 txt_percentage.setTextColor(Color.GREEN);
-                txt_3t.setTextColor(Color.GREEN);txt_3t.setText("✔");
+                txt_1t.setTextColor(Color.GREEN);txt_1t.setText("✔");
                 txt_2t.setTextColor(Color.GREEN);txt_2t.setText("✔");
                 isReady = true;
                 but_calibrate.setTextColor(Color.GREEN);
-            }
-
-            if(isCharging){
-                txt_isCharging.setText("Charging");
-                txt_1t.setTextColor(Color.GREEN);txt_1t.setText("✔");
-            } else {
-                txt_isCharging.setText("Discharging");
-                txt_1t.setTextColor(Color.RED);txt_1t.setText("✘");
             }
 
         }
@@ -76,7 +71,6 @@ public class MainActivity extends AppCompatActivity {
         but_calibrate = findViewById(R.id.but_calibrate);
         txt_percentage = findViewById(R.id.txt_percentage);
         txt_isCharging = findViewById(R.id.txt_isCharging);
-        txt_4t = findViewById(R.id.txt_4t);
         txt_3t = findViewById(R.id.txt_3t);
         txt_2t = findViewById(R.id.txt_2t);
         txt_1t = findViewById(R.id.txt_1t);
@@ -92,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
                 if(isReady) {
                     execu("mv /data/system/batterystats.bin /data/system/batterystats.bin.old");
                     execu("rm /data/system/batterystats*.bin");
-                    txt_4t.setTextColor(Color.GREEN);txt_4t.setText("✔");
+                    txt_3t.setTextColor(Color.GREEN);txt_3t.setText("✔");
                 } else {
                     dialog(false);
                 }
@@ -109,7 +103,6 @@ public class MainActivity extends AppCompatActivity {
         txt_2t.setTextColor(Color.RED);txt_2t.setText("✘");
         txt_1t.setTextColor(Color.RED);txt_1t.setText("✘");
         txt_3t.setTextColor(Color.RED);txt_3t.setText("✘");
-        txt_4t.setTextColor(Color.RED);txt_4t.setText("✘");
     }
 
     void dialog(boolean oneButton) {
