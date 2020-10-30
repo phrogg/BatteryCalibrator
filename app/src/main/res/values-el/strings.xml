@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BatteryCalibrate</string>    <!-- <string name="app_name">Βαθμονόμηση μπαταρίας</string> -->
+    <string name="title_activity_wizard" translatable="false">ΒοηθοςΔραστηριοτητας</string>
+    <string name="first" translatable="false">Πρώτα</string>
+    <string name="second" translatable="false">Δεύτερο</string>
+    <string name="third" translatable="false">Τρίτο</string>
+
+    <string name="step1">Βήμα 1: Συνδεθείτε σε φορτιστή</string>
+    <string name="step2">Βήμα 2: Φόρτιση έως και 100%</string>
+    <string name="step3">Βήμα 3: Κάντε κλικ στο Βαθμονόμηση</string>
+    <string name="action_calibrate">Βαθμονομησε</string>
+    <string name="text_indicator0">Εκφόρτιση</string>
+    <string name="text_indicator1">Φόρτιση</string>
+
+
+    <string name="desc">Η αναβάθμιση ενός ROM μπορεί να χειριστεί το αρχείο Batterstats.bin.\\nΑυτό το αρχείο χρησιμοποιείται από το τηλέφωνο για να χαρτογραφήσει τη φόρτιση της μπαταρίας. Εάν αυτό το αρχείο είναι κατεστραμμένο, το τηλέφωνο ενδέχεται να σταματήσει να φορτίζει / να χρησιμοποιεί σωστά την μπαταρία. Το αρχείο πρέπει να αναδημιουργηθεί. Αυτή η εφαρμογή θα αφαιρέσει το παλιό αρχείο Batterystats.bin και θα αφήσει το ROM να δημιουργήσει ένα νέο. Αυτό θα διορθώσει τα πιο συνηθισμένα προβλήματα λογισμικού. Ωστόσο, αυτό δεν μπορεί να επιλύσει προβλήματα που σχετίζονται με το υλικό. ΑΠΟΠΟΙΗΣΗ ΕΥΘΥΝΗΣ: Δεν είμαι υπεύθυνος για τυχόν ζημιά που μπορεί ή δεν μπορεί να συμβεί κατά τη χρήση ή τη χρήση αυτής της εφαρμογής!</string>
+    <string name="desc2">Για να επιτύχετε τα καλύτερα αποτελέσματα, φορτίστε το τηλέφωνό σας έως και 100%. Είναι καλή πρακτική να αποσυνδέετε το φορτιστή πριν κάνετε κλικ στο \ "Βαθμονόμηση \" και αφήστε την μπαταρία των τηλεφώνων να εξαντληθεί στο 5% περίπου.</string>
+</resources>
