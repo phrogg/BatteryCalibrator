@@ -2,7 +2,7 @@
 <br>
 [![Tracker Badge](https://img.shields.io/badge/Tracker-0-green.svg)](https://reports.exodus-privacy.eu.org/en/reports/search/eu.roggstar.batterycalibrate/)   [![Permissions Badge](https://img.shields.io/badge/Permissions-0-green.svg)](https://reports.exodus-privacy.eu.org/en/reports/search/eu.roggstar.batterycalibrate/)   [![ADS Badge](https://img.shields.io/badge/ADs-0-green.svg)](https://reports.exodus-privacy.eu.org/en/reports/search/eu.roggstar.batterycalibrate/)
 <br>
-[![Donate Badge](https://img.shields.io/badge/Donate-Me-green.svg)](https://paypal.me/proggenbuck)
+[![Donate Badge](https://img.shields.io/badge/Donate-Here-green.svg)](https://paypal.me/proggenbuck)
 
 
 # NoAd Battery Calibrator [ROOT]
