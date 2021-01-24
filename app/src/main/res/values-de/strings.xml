@@ -2,11 +2,11 @@
 <resources>
     <string name="app_name">BatteryCalibrate</string>
     <string name="step1">Schritt 1: Handy aufladen</string>
-    <string name="step2">Schritt 2: Zu 100% aufladen</string>
+    <string name="step2">Schritt 2: Zu ~100% aufladen</string>
     <string name="step3">Schritt 3: Kalibrieren anklicken</string>
     <string name="action_calibrate">Kalibrieren</string>
     <string name="text_indicator0">Entlädt</string>
     <string name="text_indicator1">Lädt</string>
-    <string name="desc">Das Flashen einer ROM kann die Datei Batterstats.bin manipulieren. Diese Datei wird vom Telefon verwendet, um den Ladezustand des Akkus abzubilden. Wenn diese Datei beschädigt ist, kann es vorkommen, dass das Telefon den Akku nicht mehr korrekt auflädt bzw. verwendet. Die Datei muss neu erstellt werden. Diese App entfernt die alte Datei und lässt die ROM eine neue erstellen. Dadurch werden die häufigsten Software-Probleme behoben. Dies kann jedoch keine Hardware-bezogenen Probleme beheben.  HAFTUNGSAUSSCHLUSS: Ich bin nicht verantwortlich für Schäden, die während der Benutzung oder Nichtbenutzung dieser Anwendung auftreten oder auch nicht!</string>
+    <string name="desc">Das Flashen einer ROM kann die Datei Batterstats.bin manipulieren.\n\nDiese Datei wird vom Telefon verwendet, um den Ladezustand des Akkus abzubilden. Wenn diese Datei beschädigt ist, kann es vorkommen, dass das Telefon den Akku nicht mehr korrekt auflädt bzw. verwendet. Die Datei muss neu erstellt werden. Diese App entfernt die alte Datei und lässt die ROM eine neue erstellen. Dadurch werden die häufigsten Software-Probleme behoben. Dies kann jedoch keine Hardware-bezogenen Probleme beheben.\n\nHAFTUNGSAUSSCHLUSS: Ich bin nicht verantwortlich für Schäden, die während der Benutzung oder Nichtbenutzung dieser Anwendung auftreten oder auch nicht!</string>
     <string name="desc2">Um die besten Ergebnisse zu erzielen, laden Sie Ihr Telefon bis zu 100% auf. Es ist zu empfehlen, das Ladegerät abzuziehen, bevor Sie auf \"Kalibrieren\" klicken, und den Akku des Telefons auf ca. 5% entladen zu lassen.</string>
 </resources>

@@ -6,8 +6,8 @@ android {
         applicationId "eu.roggstar.batterycalibrator"
         minSdkVersion 14
         targetSdkVersion 28
-        versionCode 12
-        versionName "ThxGuGlE"
+        versionCode 13
+        versionName "Andro10"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {

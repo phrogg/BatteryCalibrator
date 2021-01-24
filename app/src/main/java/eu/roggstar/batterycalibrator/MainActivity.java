@@ -28,6 +28,9 @@ public class MainActivity extends AppCompatActivity {
     private TextView txt_percentage, txt_isCharging,txt_3t,txt_2t,txt_1t;
     private Button but_calibrate;
     private boolean isReady = false;
+    private final String suffx =  ".old";
+    private final String prefx =  "/data/system/";
+    private final String[] fileList = new String[] {"batterystats.bin", "battery-history","batterystats-checkbin.bin","batterystats-daily.xml"};
 
     private BroadcastReceiver mBatInfoReceiver = new BroadcastReceiver(){
         @Override
@@ -51,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
                 txt_1t.setTextColor(Color.RED);txt_1t.setText("✘");
             }
 
-            if(level == 100){
+            if(level >= 95){
                 txt_percentage.setTextColor(Color.GREEN);
                 txt_1t.setTextColor(Color.GREEN);txt_1t.setText("✔");
                 txt_2t.setTextColor(Color.GREEN);txt_2t.setText("✔");
@@ -84,8 +87,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if(isReady) {
-                    execu("mv /data/system/batterystats.bin /data/system/batterystats.bin.old");
-                    execu("rm /data/system/batterystats*.bin");
+                    movFiles();
                     txt_3t.setTextColor(Color.GREEN);txt_3t.setText("✔");
                 } else {
                     dialog(false);
@@ -93,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        SharedPreferences mPref = getSharedPreferences("init",0);
+        SharedPreferences mPref = getSharedPreferences("init",0); // when the apps gets closed before the dialog is finished the dialog will not be shown again
         if(mPref.getBoolean("init",true)){
             startActivity(new Intent(MainActivity.this,WizardActivity.class));
             mPref.edit().putBoolean("init",false).commit();
@@ -105,14 +107,25 @@ public class MainActivity extends AppCompatActivity {
         txt_3t.setTextColor(Color.RED);txt_3t.setText("✘");
     }
 
+    private final void movFiles() {
+        for(int i=0;i<fileList.length;i++){
+            execu("mv "+prefx+fileList[i]+" "+prefx+fileList[i]+suffx);
+        }
+    }
+
+    private final void revFiles() {
+        for(int i=0;i<fileList.length;i++){
+            execu("mv "+prefx+fileList[i]+suffx+" "+prefx+fileList[i]);
+        }
+    }
+
     void dialog(boolean oneButton) {
         DialogInterface.OnClickListener dialogClickListener = new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 switch (which){
                     case DialogInterface.BUTTON_POSITIVE:
-                        execu("mv /data/system/batterystats.bin /data/system/batterystats.bin.old");
-                        execu("rm /data/system/batterystats*.bin");
+                        movFiles();
                         break;
 
                     case DialogInterface.BUTTON_NEGATIVE:
@@ -149,7 +162,7 @@ public class MainActivity extends AppCompatActivity {
             outputStream.flush();
             //su.waitFor();
         } catch (IOException e) {
-            Toast.makeText(this, e.toString(), Toast.LENGTH_SHORT).show();
+            //Toast.makeText(this, e.toString(), Toast.LENGTH_SHORT).show();
             return;
         }
         dialog(true);
@@ -176,7 +189,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(browserIntent);
                 return true;
             case R.id.revert:
-                execu("mv /data/system/batterystats.bin.old /data/system/batterystats.bin");
+                revFiles();
                 return true;
         }
         return false;
